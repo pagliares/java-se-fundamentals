@@ -19,4 +19,14 @@ public class Hospede {
     public void setSobrenome(String sobrenome) {
         this.sobrenome = sobrenome;
     }
+
+    public static void main(String[] args) {
+        Hospede rodrigo = new Hospede();
+        rodrigo.setNome("Rodrigo");
+        rodrigo.setSobrenome("Martins Pagliares");
+
+        // exibindo o estado do objeto
+        System.out.println("Nome...: " + rodrigo.getNome());
+        System.out.println("Sobrenome..: " + rodrigo.getSobrenome());
+    }
 }
