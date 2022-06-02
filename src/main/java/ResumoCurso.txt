@@ -37,3 +37,12 @@ objeto 2
 
  Classe System pertence ao pacote java.lang que é importado por default.
 
+ Recomenda-se sempre criar pacotes para organizar nossas classes e tornar o reuso de objetos possível.
+
+ Pacotes são estruturas hierárquicas escritos em letras minúsculas, separadas por pontos. Por exemplo, br.com.pagliares.projetox.visao.relatorios
+
+ Existem 3 cenários básicos para reuso de classes
+    1 - Reuso de classes dentro do mesmo projeto.
+    2 - Reuso de classes da api do JavaSE (Classes fornecidas pelo JRE).
+    3 - Reuso de classes de terceiros (normalmente incorporadas ao seu projeto via arquivos com extensão .jar.
+
