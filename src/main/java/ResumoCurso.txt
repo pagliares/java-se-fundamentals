@@ -46,3 +46,19 @@ objeto 2
     2 - Reuso de classes da api do JavaSE (Classes fornecidas pelo JRE).
     3 - Reuso de classes de terceiros (normalmente incorporadas ao seu projeto via arquivos com extensão .jar.
 
+ Podemos compilar e redirecionar a saída de classes presentes em pacotes, via linha de comando
+
+   - javac -d <diretorioDestino> arquivos.java
+
+ Dica: Tanto para compilar quanto para executar classes em pacotes, se posicione na raiz da estrutura de pacotes.
+
+ Modificadores de acesso
+
+ Existem 4 modificadores de acesso na linguagem Java que controlam a acessibilidade de classes e seus membros perante outros objetos de sua aplicaçao.
+
+ São eles: private, public, protected e package-friendly (que é o default e que não precisa ser declarado explicitamente).
+
+ private - atributos e métodos definidos com este modificador de acesso só são acessíveis a partir da própria classe que os definiu.
+
+ public - atributos e métodos, além de classes que são rotuladas com este modificador possuem acesso universal a partir de qualquer classe dentro do projeto.
+
