@@ -1,4 +1,4 @@
-package episode1;
+package episodio1;
 
 public class Hospede {
     private String nome; // campo, variável de instância, atributo
