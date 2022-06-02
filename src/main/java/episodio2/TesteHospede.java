@@ -1,4 +1,4 @@
-package episodio1;
+package episodio2;
 
 public class TesteHospede {
     public static void main(String[] args) {
