@@ -10,7 +10,9 @@ Episódio 1
 
 Abstração - Ocultar os detalhes desnecessários para o software.
 
-Classes - Um modelo (template) que incorpora características (representadas por atributos/campos/variáveis de instância) e funcionalidades (representadas por métodos- funçoes)
+Classes - Um modelo (template) que incorpora características (representadas por atributos/campos/variáveis de instância) e funcionalidades (representadas por métodos- funçoes).
+
+Classe é constituída de membros (campos, construtores e métodos).
 
 Objetos - São entidades criada a partir de classes (processo conhecido como instanciação). A classe determina a estrutura que os objetos em nível de execução vão compartilhar. Dados específicos estão presentes em cada objeto.
 
@@ -21,3 +23,17 @@ objeto 1
 objeto 2
    nome = "Adriano"
    curso = "Educação Física"
+
+ Aluno objeto1 = new Aluno();
+ Aluno objeto2 = new Aluno();
+
+ Pacotes - Estruturas da linguagem Java que permitem organizar as classes de nossas aplicações e fornecem um mecanismo simples para reuso de classes. O reuso é conseguido a partir do comando import
+
+ import java.util.*;  // mostro para o compilador a localização de todas as classes do pacote java.util.
+
+ ou
+
+ import java.util.Date // exibo a localização de apenas uma classe.
+
+ Classe System pertence ao pacote java.lang que é importado por default.
+
