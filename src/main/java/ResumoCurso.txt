@@ -1,7 +1,22 @@
 Resumo do curso de Programação Orientada a Objetos e Linguagem de Programação Java
 
-Episódio 0 - Parte 1
-   - Introdução à Tecnologia Java.
+_____________________________________________________________________________
+                    Introdução à Tecnologia Java
+JVM - Java Virtual Machine - Máquina Virtual Java - Responsável por interpretar bytecodes
+
+JRE - Java Runtime Environment - Ambiente de execução Java - Engloba a JVM e fornece classes essenciais da linguagem Java. Por exemplo, a classe System do pacote java.lang e a classe Date do pacote java.util.
+
+ JDK - Java Development Kit - Kit de desenvolvimento Java - Fornece a JRE mais um conjunto de ferramentas para auxíliar o desenvolvedor no dia-a-dia. Por exemplo, ferramentas para a geração de documentação HTML, compilador, etc.
+
+JAVA SE - Java Standard Edition - Java tradicional voltada para o desenvolvimento de aplicações simples, por exemplo, aplicações desktop, em linha de comando, distribuídas via RMI, e com acesso a SGBDs relacionais.
+
+JAVA EE (hoje, Jakarta EE - 2022) - Jakarta Enterprise Edition - Plataforma Java para desenvolvimento de aplicações corporativas, distribuídas e robustas. Por exemplo, aplicações web com Jakarta Server Faces e com lógica de negócios encapsuladas em Enterprise Jakarta Beans - EJB.
+
+JAVA ME (pouco se escuta sobre esta plataforma  nos dias atuais - 2022) - Plataforma Java para desenvolvimento de aplicativos para dispositivos móveis.
+
+JAVA FX - Plataforma Java para o desenvolvimento de aplicações com interfaces ricas com o usuário - RIA (era uma API da linguagem padrão JavaSE, mas hoje em dia - 2022 - embora seja usada para desenvolvimento de aplicacões desktop em Java, é desenvolvida por terceiros, não fazendo parte da especificação da linguagem.
+
+
 
 Episódio 0 - Parte 2
    - Configuração do ambiente de desenvolvimento no Windows.
@@ -61,4 +76,13 @@ objeto 2
  private - atributos e métodos definidos com este modificador de acesso só são acessíveis a partir da própria classe que os definiu.
 
  public - atributos e métodos, além de classes que são rotuladas com este modificador possuem acesso universal a partir de qualquer classe dentro do projeto.
+
+Package-friendly - Este modificador faz com que os membros declarados com visibilidade de pacote só podem ser acessados por métodos e construtores presentes na mesma classe onde os membros com visibilidade foram definidos e por outros objetos pertencentes ao mesmo pacote. Não conseguimos acessar membros de classes com visibilidade de pacotes a partir de outros pacotes do sistema.
+
+Uma classe com visibilidade de pacote só pode ser acessada a partir do mesmo pacote.
+
+protected - discutir mais adiante, pois depende do conceito de herança.
+
+
+
 
