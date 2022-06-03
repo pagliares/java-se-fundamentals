@@ -113,6 +113,20 @@ Por exemplo, classe Hospede, arquivo Hospede.java
 [<declaração_pacote>]
 [<declarações_import>] +
 <declarações_classes>
+     <declaração_campos> +
+     <declaração_construtores> +
+     <declaração_métodos> +
+
+O tipo de retorno de um método pode ser qualquer tipo primitivo, tipo de referência ou void (indicando que o método não retorna nenhum valor para o código cliente que o invocou).
+
+Quando um método retorna alguma valor para o código que o invocou, cabe ao cliente decidir se deve ou não capturar este retorno para uso mais adiante no código
+
+Sintaxe básica no código cliente
+   <tipo_retorno> <nome_variavel> = <referencia>.<nomeMetodo([<lista_parametros]>) // método retorna o valor do tipo <tipoRetorno>
+   exemplo:
+   String nome = rodrigo.getNome();
+
+   double salario = rodrigo.getSalario(); // getSalario retorna um tipo primitivo double
 
 _____________________________________________________________________________
                                 Comentários
@@ -131,5 +145,14 @@ múltiplas linhas
 */
 
 Comentário específico para geração de documentação HTML.
+
+/**
+
+*/
+
+2022 - Para gerar documentação HTML com Javadoc no IntelliJ: Menu Tools | Generate JavaDoc...). Para maiores detalhes, consulte: https://bit.ly/3Q2dwS4
+
+_____________________________________________________________________________
+                    Tipos primitivos e tipos de referência
 
 
