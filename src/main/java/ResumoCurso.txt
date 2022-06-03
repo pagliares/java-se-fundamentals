@@ -90,4 +90,46 @@ Toda classe tem pelo menos um construtor que é invocado para criação de objet
 
 Os construtores são diferente de métodos por não possuírem tipo de retorno e são eles os primeiros membros a serem invocados em uma classe no momento de instanciação do objeto com o operador new.
 
+Se você quer criar um construtor que recebe algum parâmetro, você perde o construtor default. Nesse caso, havendo necessidade, você deve explicitamente escrever o construtor default (que não recebe parâmetros).
+
+_____________________________________________________________________________
+Sintaxe e Layout de um arquivo fonte em Java
+
+Sintaxe dos membros e elementos de uma classe Java
+
+Sintaxe de uma classe: <modificador_acesso> class <Nome_classe> {  }
+Sintaxe de atributos: <modificador_acesso> tipo <nome_atributo> [= valor inicial].
+Sintaxe de um construtor: <modificador_acesso> <nome_construtor>([<lista de argumentos>]) {  }
+Sintaxe de um método: <modificador_acesso> <tipo_retorno> <nome_método>([lista_argumentos]) { }
+Sintaxe de um pacote: <nome_pacote_raiz>[.<nome_subpacote>];
+Sintaxe do import: import <nome_pacote>[.<nome_subpacote>].<Nome_classe>;
+                   import <nome_pacote>[.<nome_subpacote>].*;
+
+Layout de um arquivo fonte em Java
+
+O nome da classe pública indica o nome do arquivo .java.
+Por exemplo, classe Hospede, arquivo Hospede.java
+
+[<declaração_pacote>]
+[<declarações_import>] +
+<declarações_classes>
+
+_____________________________________________________________________________
+                                Comentários
+
+Existem 3 tipos de comentários em Java:
+
+Comentário de uma linha
+
+// Este é um comentário de uma linha
+
+Comentário de múltiplas linhas
+/*
+Este é um comentário
+de
+múltiplas linhas
+*/
+
+Comentário específico para geração de documentação HTML.
+
 
