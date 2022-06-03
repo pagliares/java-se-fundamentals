@@ -83,6 +83,11 @@ Uma classe com visibilidade de pacote só pode ser acessada a partir do mesmo pa
 
 protected - discutir mais adiante, pois depende do conceito de herança.
 
+_____________________________________________________________________________
+Criação de objetos com o operador new
 
+Toda classe tem pelo menos um construtor que é invocado para criação de objetos. Por padrão não precisamos explicitamente definir um construtor que não recebe argumentos. O mesmo é inserido automaticamente pela linguagem Java.
+
+Os construtores são diferente de métodos por não possuírem tipo de retorno e são eles os primeiros membros a serem invocados em uma classe no momento de instanciação do objeto com o operador new.
 
 
