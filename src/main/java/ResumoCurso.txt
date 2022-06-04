@@ -191,5 +191,37 @@ Qual a vantagem de String ser tipo de referência (objeto) e não tipo primitivo
 Qual a desvantagem?
    pior performance
 
-Tipos de referência se iniciam com letra maiúscula.
+Tipos de referência se iniciam com a primeira letra em maiúscula.
 
+null é um valor especial que indica que uma referência não está apontando para nenhum objeto na heap. Este valor pode ser atribuído out testado apenas com referências e não com tipos primitivos.
+
+_____________________________________________________________________________
+                     Convenções de nomenclatura
+
+Java é uma linguagem Case Sensitive
+    - Diferencia maiúsculas de minúsculas.
+    - exemplo, hospede, Hospede, hosPede são variáveis distintas na linguagem.
+
+Costumamos usar uma convenção (não obrigatória) para nomear os identificadores em Java
+
+Classes - Iniciam com a primeira letra em maiúsculo
+        - Substantivos
+        - Caso seja uma palavra composta, a primeira letra de cada substring é em letra maiúscula.
+        - Hospede, CatalogoProdutos
+
+Métodos - Iniciam com a primeira letra em minúsculo
+        - verbos (ações)
+        - Caso seja uma palavra composta, a primeira letra a partir da primeira palavra é maiúscula.
+        - calcularImposto(), getNome(), imprimir()
+
+Variáveis - Iniciam com a primeira letra em minúsculo
+          - Caso seja uma palavra composta, a primeira letra a partir da primeira palavra é maiúscula.
+          - hospede, impostoAPagar, dataNascimento
+
+Pacotes - tudo em letra minúsculas, separados por ponto.
+        - br.com.pagliares.sistemax.tela
+        - java.util
+
+Constantes - Tudo em maiúscula
+           - Palavras compostas separadas por underline
+           - PI, FORCA_GRAVIDADE
