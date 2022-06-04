@@ -155,4 +155,35 @@ Comentário específico para geração de documentação HTML.
 _____________________________________________________________________________
                     Tipos primitivos e tipos de referência
 
+Tipos primitivos
+  Existem 8 tipos primitivos dentro da linguagem. São eles:
+     byte, short, int, long, float, double, char e boolean.
 
+  4 tipos são específicos para números inteiros:
+     byte (8 bits), short (16 bits), int (32 bits), long (64 bits).
+     byte = 2 ^ 8 = 256/2 = -128 até 127
+     raciocínio similar para os outros tipos numéricos.
+     por padrão, um literal inteiro, por exemplo, 5, é do tipo int.
+
+  2 tipos específicos para números de ponto flutuante (reais)
+     float (32 bits), double (64 bits)
+     por padrão, um literal ponto flutuante, por exemplo, 35.55, é do tipo double.
+
+  1 tipo sem sinal para representar elementos e caracters especiais
+     char (16 bits) - Unicode
+
+  1 tipo representando valores lógicos
+     boolean e só assume dois possíveis valores: true, false
+
+  Todos os tipos primitivos se iniciam com letras minúsculas.
+
+Tipos de referência
+
+   Além dos tipos primitivos, todos os demais tipos são chamados tipos de referência.
+      tipos associados com objetos instanciados na Heap, diferentemente de tipos primitivos que não são objetos.
+      Tipo String que representa uma cadeia de caracteres
+      String em Java é um objeto e não um tipo primitivo.
+
+Qual a vantagem de String ser tipo de referência (objeto) e não tipo primitivo?
+
+Qual a desvantagem?
