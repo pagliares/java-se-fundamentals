@@ -1,4 +1,4 @@
-Resumo do curso de Programação Orientada a Objetos e Linguagem de Programação Java
+        Resumo do curso de Programação Orientada a Objetos e Linguagem de Programação Java
 
 _____________________________________________________________________________
                     Introdução à Tecnologia Java
@@ -16,11 +16,12 @@ JAVA ME (pouco se escuta sobre esta plataforma  nos dias atuais - 2022) - Plataf
 
 JAVA FX - Plataforma Java para o desenvolvimento de aplicações com interfaces ricas com o usuário - RIA (era uma API da linguagem padrão JavaSE, mas hoje em dia - 2022 - embora seja usada para desenvolvimento de aplicacões desktop em Java, é desenvolvida por terceiros, não fazendo parte da especificação da linguagem.
 
+_____________________________________________________________________________
+            Configuração do ambiente de desenvolvimento
 
 
-Episódio 0 - Parte 2
-   - Configuração do ambiente de desenvolvimento no Windows.
-
+_____________________________________________________________________________
+    -
 Episódio 1
 
 Abstração - Ocultar os detalhes desnecessários para o software.
@@ -265,3 +266,8 @@ class { // bloco externo
 }
 
 Uma variável definida dentro de um bloco se extingue após a execução do mesmo.
+
+_____________________________________________________________________________
+                        Escopo de variáveis
+
+O exemplo exibido para discutir o conceito de escopo é puramente ilustrativo já que não é recomendado usarmos nomes idênticos de variáveis em escopos distintos já que isso pode tornar a depuração de nossos códigos mais tediosa.
