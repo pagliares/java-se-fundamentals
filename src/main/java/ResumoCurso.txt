@@ -225,3 +225,43 @@ Pacotes - tudo em letra minúsculas, separados por ponto.
 Constantes - Tudo em maiúscula
            - Palavras compostas separadas por underline
            - PI, FORCA_GRAVIDADE
+
+_____________________________________________________________________________
+            Blocos e espaços em branco
+
+Espaços em branco
+
+Espaços em branco são ignorados pelo compilador e devem ser usados com o objetivo de tornar nossos código mais legíveis.
+   - Use espaços em branco para identar os seus códigos.
+   - Usando níveis de aninhamento (tabulação) no momento que estiver codificando.
+
+Blocos
+
+Conjunto de 0, 1 ou mais instruções delimitadas por {  }
+
+Blocos definem o escopo de visualização de variáveis.
+
+class { // bloco externo
+
+  private String nome;
+
+  construtor() { // bloco do construtor
+     nome = "Rodrigo";
+     int idade = 0;
+  }
+
+  metodo() { // bloco do método
+    nome = "Martins Pagliares";
+    idade = 55; // erro.
+
+    estruturas de seleção (exemplo, if) { // bloco do if
+        nome = nome + "33";
+    }
+
+    estrutura de repetição (for) { // bloco do for
+
+    }
+  }
+}
+
+Uma variável definida dentro de um bloco se extingue após a execução do mesmo.
