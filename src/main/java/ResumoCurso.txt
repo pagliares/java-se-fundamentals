@@ -185,5 +185,11 @@ Tipos de referência
       String em Java é um objeto e não um tipo primitivo.
 
 Qual a vantagem de String ser tipo de referência (objeto) e não tipo primitivo?
+   possibilidade de se reutilizar métodos úteis já implementados
+   por exemplo, podemos reutilizar a o método length() que retorna o tamanho da string (não precisamos implementar este algoritmo).
 
 Qual a desvantagem?
+   pior performance
+
+Tipos de referência se iniciam com letra maiúscula.
+
