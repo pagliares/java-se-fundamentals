@@ -380,4 +380,9 @@ Existem diversos tipos de associações baseadas em sua multiplicidade e navegab
 
 Por exemplo:
 
-Associação 1:1 - Hospede reside em um Endereco.
+Associação 1:1 (multiplicidade) - Hospede reside em um Endereco.
+Navegabilidade (unidirecional) de hospede para endereco
+   - métodos de hospede enviam mensagens para métodos de endereco, o contrário não é verdade.
+   - Endereco não sabe da existência de hospede.
+   - Dessa forma, mudanças na classe hóspede não afetam a classe endereço.
+
