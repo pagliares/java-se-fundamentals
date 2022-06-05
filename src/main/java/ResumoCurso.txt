@@ -19,10 +19,26 @@ JAVA FX - Plataforma Java para o desenvolvimento de aplicações com interfaces 
 _____________________________________________________________________________
             Configuração do ambiente de desenvolvimento
 
+Cenários:
+
+   - Executar aplicações Java
+     - Instalar o ambiente de execução Java - JRE
+
+   - Executar e desenvolver aplicações Java
+     - Instalar o kit de desenvolvimento Java - JDK
+
+Não precisamos de um IDE como o NetBeans, Eclipse ou IntelliJ para desenvolvermos nossas aplicações. Todavia, isto é muuuuuito recomendado.
+
+Cenários de instalação para o desenvolvedor:
+
+   - Instalar separadamente o JDK e depois instalar um IDE apontando para o JDK
+
+   - Instalar o bundle IDE + JDK
+      - NetBeans possui esta opção
+      - Downloado no site www.netbeans.org
 
 _____________________________________________________________________________
-    -
-Episódio 1
+                Fundamentos da orientação a objetos
 
 Abstração - Ocultar os detalhes desnecessários para o software.
 
@@ -42,6 +58,9 @@ objeto 2
 
  Aluno objeto1 = new Aluno();
  Aluno objeto2 = new Aluno();
+
+_____________________________________________________________________________
+                    Pacotes e import
 
  Pacotes - Estruturas da linguagem Java que permitem organizar as classes de nossas aplicações e fornecem um mecanismo simples para reuso de classes. O reuso é conseguido a partir do comando import
 
@@ -68,7 +87,8 @@ objeto 2
 
  Dica: Tanto para compilar quanto para executar classes em pacotes, se posicione na raiz da estrutura de pacotes.
 
- Modificadores de acesso
+_____________________________________________________________________________
+                        Modificadores de acesso
 
  Existem 4 modificadores de acesso na linguagem Java que controlam a acessibilidade de classes e seus membros perante outros objetos de sua aplicaçao.
 
@@ -117,17 +137,6 @@ Por exemplo, classe Hospede, arquivo Hospede.java
      <declaração_campos> +
      <declaração_construtores> +
      <declaração_métodos> +
-
-O tipo de retorno de um método pode ser qualquer tipo primitivo, tipo de referência ou void (indicando que o método não retorna nenhum valor para o código cliente que o invocou).
-
-Quando um método retorna alguma valor para o código que o invocou, cabe ao cliente decidir se deve ou não capturar este retorno para uso mais adiante no código
-
-Sintaxe básica no código cliente
-   <tipo_retorno> <nome_variavel> = <referencia>.<nomeMetodo([<lista_parametros]>) // método retorna o valor do tipo <tipoRetorno>
-   exemplo:
-   String nome = rodrigo.getNome();
-
-   double salario = rodrigo.getSalario(); // getSalario retorna um tipo primitivo double
 
 _____________________________________________________________________________
                                 Comentários
@@ -195,6 +204,17 @@ Qual a desvantagem?
 Tipos de referência se iniciam com a primeira letra em maiúscula.
 
 null é um valor especial que indica que uma referência não está apontando para nenhum objeto na heap. Este valor pode ser atribuído out testado apenas com referências e não com tipos primitivos.
+
+O tipo de retorno de um método pode ser qualquer tipo primitivo, tipo de referência ou void (indicando que o método não retorna nenhum valor para o código cliente que o invocou).
+
+Quando um método retorna alguma valor para o código que o invocou, cabe ao cliente decidir se deve ou não capturar este retorno para uso mais adiante no código
+
+Sintaxe básica no código cliente
+   <tipo_retorno> <nome_variavel> = <referencia>.<nomeMetodo([<lista_parametros]>) // método retorna o valor do tipo <tipoRetorno>
+   exemplo:
+   String nome = rodrigo.getNome();
+
+   double salario = rodrigo.getSalario(); // getSalario retorna um tipo primitivo double
 
 _____________________________________________________________________________
                      Convenções de nomenclatura
@@ -294,3 +314,40 @@ double                              0.0D (redundante)
 char                                \u0000
 boolean                             false
 tipos de referência                 null
+
+_____________________________________________________________________________
+            Identificadores e palavras reservadas
+
+Identificador é o nome dado a uma classe, variável ou método.
+
+Identificadores começam com uma letra, sublinhado ou símbolo de $
+
+Caracteres subsequentes à primeira letra do identificador podem ser dígitos.
+
+Identificadores são sensíveis ao contexto (A diferente de a)
+
+Exemplos de identificadores válidos
+
+    identificador;
+    _variavelValida;
+    $variavelValida;
+    numero5;
+
+Exemplos de identificadores inválidos
+
+    5variavel;
+
+Identificadores não podem ser palavras reservadas da linguagem:
+
+Palavras reservadas
+abstract    continue    goto          package      synchronized
+assert      default     if            private      this
+boolean     do          implements    protected    throw
+break       double      import        public       throws
+byte        else        instanceof    return       transient
+case        extends     int           short        try
+catch       final       interface     static       void
+char        finally     long          strictfp     volatile
+class       float       native        super        while
+const       for         new           switch       enum
+
