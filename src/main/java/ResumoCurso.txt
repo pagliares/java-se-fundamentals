@@ -369,4 +369,15 @@ A técnica de refactoring tem como objetivo a limpeza de código que já está f
 A técnica é descrita no famoso livro do Martin Fowler chamado
 "Refactoring: improving the design of existing code". (tem traducão para português. A primeira edição usa-se Java para ilustração. A segudna edição do livro, usa-se JavaScript).
 
+_____________________________________________________________________________
+                                Associações
 
+Um relacionamento semântico em instâncias de classes.
+
+Podem ser restringidos por multiplicidade e navegabilidade.
+
+Existem diversos tipos de associações baseadas em sua multiplicidade e navegabilidade.
+
+Por exemplo:
+
+Associação 1:1 - Hospede reside em um Endereco.
