@@ -354,3 +354,19 @@ const       for         new           switch       enum
 _____________________________________________________________________________
                         Atribuição de referências
 
+Quando duas variáveis de referência estão apontando para o mesmo objeto na heap, temos o efeito colateral de que ao se alterar o estado de um objeto com uma das referências, esta alteração é propagada para o outro objeto.
+
+ex:
+Hospede h1 = new Hospede("Rodrigo", "Martins");
+Hospede h2 = h1;
+h2.setNome("Maria"); // Tanto h1 quanto h2 apontarão para um objeto de estado "Maria Martins"
+
+_____________________________________________________________________________
+                            Refactoring
+
+A técnica de refactoring tem como objetivo a limpeza de código que já está funcionando sem acrescentar novas funcionalidades.
+
+A técnica é descrita no famoso livro do Martin Fowler chamado
+"Refactoring: improving the design of existing code". (tem traducão para português. A primeira edição usa-se Java para ilustração. A segudna edição do livro, usa-se JavaScript).
+
+
