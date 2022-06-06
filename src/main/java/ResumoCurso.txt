@@ -197,7 +197,6 @@ Tipos primitivos
           \'    aspas simples
           \\    barra invertida
 
-          -
       - Se usarmos literais precedidos com \u, devemos envolver os 4 dígitos hexadecimais em aspas simples e respeitar o limite que vai de '\u0000' até '\uFFFF'
      - Conseguimos representar 65.536 caracteres com o tipo char.
           - Atualmente, o tipo char de 16 bits não é suficiente para descrever todos os caracteres unicode.
@@ -237,6 +236,15 @@ Sintaxe básica no código cliente
    String nome = rodrigo.getNome();
 
    double salario = rodrigo.getSalario(); // getSalario retorna um tipo primitivo double
+
+_____________________________________________________________________________
+            Conversão, Coerção (Casting) de tipos primitivos e Referência
+
+- Temos que ter cuidado no momento de fazer atribuições de valores de tipos distintos
+
+- Quando somamos um byte com byte, ou short com short, ou byte com short, temos como resultado um int.
+   - Solução: atribuir o resultado para um int
+              ou fazer o casting do resultado para short ou byte
 
 _____________________________________________________________________________
                      Convenções de nomenclatura
