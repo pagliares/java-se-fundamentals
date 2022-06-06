@@ -240,7 +240,14 @@ Sintaxe básica no código cliente
 _____________________________________________________________________________
             Conversão, Coerção (Casting) de tipos primitivos e Referência
 
-- Temos que ter cuidado no momento de fazer atribuições de valores de tipos distintos
+- Temos que ter cuidado no momento de fazer atribuições de valores de tipos distintos.
+  Se a informação puder ser perdida em uma atribuição, o programador deverá confirmar a atribuição com casting (coerção).
+     - A atribuição entre um long (64) para um int (32) bits, precisa de um cast explícito.
+     - Casting explícito é indicado pelo uso de parênteses.
+
+- Variáveis são automaticamente promovidas a um tipo "superior"
+     - expressão é compatível com a atribuição.
+     - Exemplo de um int(32) bits para um long(64) bits
 
 - Quando somamos um byte com byte, ou short com short, ou byte com short, temos como resultado um int.
    - Solução: atribuir o resultado para um int
@@ -430,3 +437,12 @@ Existem 3 formas de utililização da palavra reservada this:
     - A primeira linha de um construtor deve ser sempre um this recursivo ou super.
 
 3 - Passagem da referência atual sendo executada para outro objeto.
+
+_____________________________________________________________________________
+                            Passagem de argumentos
+
+- Java só passa argumentos para um método por VALOR, SEMPRE !!!!
+
+- Em passagem por valor, uma cópia do parâmetro é feita localmente e uma alteração na cópia não altera o valor original.
+
+- Quando passamos objetos para um método uma cópia do endereço do objeto é feita. Não existe passagem por referência em Java.
