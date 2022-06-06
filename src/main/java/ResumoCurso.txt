@@ -183,7 +183,26 @@ Tipos primitivos
      por padrão, um literal ponto flutuante, por exemplo, 35.55, é do tipo double.
 
   1 tipo sem sinal para representar elementos e caracters especiais
-     char (16 bits) - Unicode
+     - Tipo numérico de 16 bits, sem sinal, usados para representar um caracter Unicode.
+        - char cara = 'A';
+        - char car1 = 65;
+        - char cara3 = '\uXXXX;
+
+      - Além do \u, podemos usar sequências especiais de escape.
+
+          \b    backspace
+          \t    tabulação
+          \n    quebra de linha
+          \"    aspas duplas
+          \'    aspas simples
+          \\    barra invertida
+
+          -
+      - Se usarmos literais precedidos com \u, devemos envolver os 4 dígitos hexadecimais em aspas simples e respeitar o limite que vai de '\u0000' até '\uFFFF'
+     - Conseguimos representar 65.536 caracteres com o tipo char.
+          - Atualmente, o tipo char de 16 bits não é suficiente para descrever todos os caracteres unicode.
+     - Literais do tipo char são envoltos em aspas simples 'A'
+     - Diferente de Strings que são objetos em Java, envoltos com aspas duplas ("A")
 
   1 tipo representando valores lógicos
      boolean e só assume dois possíveis valores: true, false
