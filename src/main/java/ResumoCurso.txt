@@ -386,3 +386,17 @@ Navegabilidade (unidirecional) de hospede para endereco
    - Endereco não sabe da existência de hospede.
    - Dessa forma, mudanças na classe hóspede não afetam a classe endereço.
 
+_____________________________________________________________________________
+                    A palavra reservada this
+
+Existem 3 formas de utililização da palavra reservada this:
+
+1 - Resolver ambiguidade entre variáveis com o mesmo nome, declaradas em escopo distinto
+    - Exemplo variável local com o mesmo nome de uma variável de instância.
+    - O this precedendo a variável indica que a mesma representa a variável de instância.
+
+2 - This recursivo
+    - Permite eliminar duplicidade de código dentro dos construtores, chamando os construtores sobrecarregados recursivamente.
+    - A primeira linha de um construtor deve ser sempre um this recursivo ou super.
+
+3 - Passagem da referência atual sendo executada para outro objeto.
