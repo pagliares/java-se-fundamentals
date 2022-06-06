@@ -162,6 +162,9 @@ Comentário específico para geração de documentação HTML.
 
 2022 - Para gerar documentação HTML com Javadoc no IntelliJ: Menu Tools | Generate JavaDoc...). Para maiores detalhes, consulte: https://bit.ly/3Q2dwS4
 
+Para comentar várias linhas de uma vez só, basta selecioná-las e pressionar CRTL + /
+
+Para remover os comentários em várias linhas, basta selecioná-las e pressionar CRTL + /
 _____________________________________________________________________________
                     Tipos primitivos e tipos de referência
 
